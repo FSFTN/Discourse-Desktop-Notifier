@@ -1,0 +1,9 @@
+DISPLAY=:0
+
+
+DISCOURSE_APIKEY='YOUR_APIKEY'
+DISCOURSE_USERNAME='YOUR_USERNAME'
+
+# Checks for new notification every 10 minutes
+
+*/10 * * * * /usr/bin/python /path/to/discourse-desktop-notifier/src/notification.py

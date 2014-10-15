@@ -73,13 +73,11 @@ Use crontab to check notification after n number of minutes.
 
 **Example**
 
-`crontab -e`
+`crontab -r` (**caution**: This will remove any existing cron jobs if you already have.)
 
-    DISPLAY=:0
+* Open the `cronfile` in your text editor present in the same directory and set the values for `DISCOURSE_APIKEY` & `DISCOURSE_USERNAME`. Also do replace the `/path/to` to point to the path where this directory is located.
 
-    DISCOURSE_APIKEY='YOUR_KEY_HERE'
-    DISCOURSE_USERNAME='YOUR_USERNAME'
-    */10 * * * * /usr/bin/python /path/to/discourse-desktop-notifier/notification.py
+`crontab cronfile` (We are supplying `cronfile` as input to the crontab)
 
 
 Save the file and the above cron job will run the program for every 10 minutes to check for notification
