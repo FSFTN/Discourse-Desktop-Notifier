@@ -6,4 +6,5 @@ Notifications on
 
 Miscellaneous
 -------------
-Follow PEP style for structuring the application with setup.py file.
+1. To use pynotify for sending notifications, instead of system call.
+2. Follow PEP style for structuring the application with setup.py file.
