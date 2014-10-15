@@ -19,9 +19,9 @@ import sys
 def check_libraries():
     try:
         import pydiscourse
-        print "PyDiscourse Library Found."
+        print "SUCCESS: PyDiscourse Library Found."
     except:
-        print "pydiscourse not found. Please install from https://github.com/tindie/pydiscourse"
+        print "FAILURE: pydiscourse not found. Please install from https://github.com/tindie/pydiscourse"
         print "-" * 20
         sys.exit()
 
@@ -35,23 +35,23 @@ if __name__ == '__main__':
     if not os.path.exists(directory):
         print "Target Directory doesn't exist. Creating one"
         os.makedirs(directory)
-        print "Target Directory created."
+        print "SUCCESS: Target Directory created."
     else:
         print "Target Directory found."
 
     if os.environ.get('DISCOURSE_APIKEY', None) == None:
-        print "DISCOURSE_APIKEY environment variable not found. Stopping"
+        print "FAILURE: DISCOURSE_APIKEY environment variable not found."
         print "-" * 20
         sys.exit()
     else:
-        print "DISCOURSE_APIKEY environment variable found."
+        print "SUCCESS: DISCOURSE_APIKEY environment variable found."
 
     if os.environ.get('DISCOURSE_USERNAME', None) == None:
-        print "DISCOURSE_USERNAME environment variable not found. Stopping"
+        print "FAILURE: DISCOURSE_USERNAME environment variable not found. ERROR"
         print "-" * 20
         sys.exit()
     else:
-        print "DISCOURSE_USERNAME environment variable found."
+        print "SUCCESS: DISCOURSE_USERNAME environment variable found."
 
     check_libraries()
 
