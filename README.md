@@ -73,7 +73,9 @@ Use crontab to check notification after n number of minutes.
 
 **Example**
 
-    crontab -e
+`crontab -e`
+
+    DISPLAY=:0
 
     DISCOURSE_APIKEY='YOUR_KEY_HERE'
     DISCOURSE_USERNAME='YOUR_USERNAME'

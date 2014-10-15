@@ -43,7 +43,7 @@ def main():
                 new_notification = notification_count - previous_count
 
                 # send system notification
-                system("notify-send -t 0 'FSFTN Discussion' 'You have new notification(s)'")
+                system("/usr/bin/notify-send -t 0 'FSFTN Discussion' 'You have new notification(s)'")
 
     else:
         # create the file for the first time
