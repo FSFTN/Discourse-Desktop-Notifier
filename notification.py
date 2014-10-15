@@ -43,8 +43,7 @@ def main():
                 new_notification = notification_count - previous_count
 
                 # send system notification
-                system("notify-send -t 0 'FSFTN Discussion' \
-                       'You have %d new notification\n<a href='http://discuss.fsftn.org'>View discussions</a>" % new_notification)
+                system("notify-send -t 0 'FSFTN Discussion' 'You have new notification(s)'")
 
     else:
         # create the file for the first time
