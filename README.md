@@ -50,7 +50,7 @@ Note: You can update the ~/.profile file so that the environment variables will 
 
 ## PyDiscourse
 
-[PyDiscourse](https://github.com/tindie/pydiscourse/) is an Python API for working with Discourse. We are using this python API to communicate with discourse powered site. Since pydiscourse also depends on `requests` library, we need to install that too.
+[PyDiscourse](https://github.com/tindie/pydiscourse/) is an Python API for working with Discourse. We are using this python API to communicate with discourse powered site.
 
 **Installing PyDiscourse**
 
@@ -59,8 +59,6 @@ Note: You can update the ~/.profile file so that the environment variables will 
     cd pydiscourse
 
     sudo python setup.py install
-
-    sudo pip install -U requests
 
 
 On successfull installation, run the `python configure.py` again to make sure things are in place.
