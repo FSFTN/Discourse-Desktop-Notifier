@@ -1,9 +1,9 @@
 DISPLAY=:0
 
 
-DISCOURSE_APIKEY='057202771c2d7aee44a56c5d48426212d21f84d30ad4df5b137b5b29346f9d94'
-DISCOURSE_USERNAME='prashere'
+DISCOURSE_APIKEY='YOUR_APIKEY'
+DISCOURSE_USERNAME='YOUR_USERNAME'
 
 # Checks for new notification every 10 minutes
 
-*/10 * * * * /home/pras/.virtualenvs/Hacks/local/bin/python /home/pras/Code/sandbox/python/fsftn_discourse/src/notification.py
+*/10 * * * * /usr/bin/python /path/to/discourse-desktop-notifier/src/notification.py > $HOME/.discourse/access.log
