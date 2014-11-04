@@ -81,3 +81,9 @@ Use crontab to check notification after n number of minutes.
 
 
 Save the file and the above cron job will run the program for every 10 minutes to check for notification
+
+-------------------------
+
+## Screenshot
+
+<img src="img/screenshot.png" alt="Notification Screenshot" style="width: 500px; height: 400px"/>
